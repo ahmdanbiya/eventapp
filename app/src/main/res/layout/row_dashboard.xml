@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="4dp"
+                android:scaleType="fitXY"
+                android:id="@+id/img_event"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout android:layout_weight="0.75"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:layout_marginBottom="4dp"
+                />
+
+            <TextView android:textSize="12sp"
+                android:id="@+id/txt_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="event_description" />
+
+            <TextView android:textSize="10sp"
+                android:textStyle="italic"
+                android:id="@+id/txt_event_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="location" />
+
+            <TextView android:textSize="10sp"
+                android:textStyle="italic"
+                android:id="@+id/txt_event_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="location" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
